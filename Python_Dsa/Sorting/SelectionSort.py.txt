@@ -1,0 +1,12 @@
+#selection sort has simple funda-> find minimum and swap 
+
+a = [16,1,35,25,6,2]
+
+for i in range(len(a)):
+	min =i
+	for j in range(i+1,len(a)):
+		if(a[min] > a[j]):
+			min = j
+	a[min],a[i] = a[i],a[min]
+			
+print(a)
